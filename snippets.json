@@ -1,0 +1,29 @@
+{
+    "syntaxProfiles": {
+        // Enable XHTML dialect for HTML syntax
+        // "html": "xhtml"
+        "html" : {
+        "filters" : "html, c"
+        }
+    },
+    
+    // Emmet preferences
+    // List of all available preferences:
+    // http://docs.emmet.io/customization/preferences/
+    "preferences": {
+        "filter.commentAfter": " <!--<%= attr(\"id\", \"#\") %> <%= attr(\"class\", \".\") %> -->"
+    },
+
+    // Custom snippets definitions, as per https://github.com/emmetio/emmet/blob/master/snippets.json
+    "snippets": {
+        "css": {
+            "abbreviations": {
+                "ie11": "//IE Specific fix\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n\t/* IE10+ CSS styles go here */\n}",
+                "edge": "//Edge Specific fix\n@supports (-ms-ime-align: auto) {\n\t/* IE Edge 12+ CSS styles go here */\n }",
+                "brs":  "@media (max-width: \\$breakpoint-small) {\n\t\n}",
+                "brm":  "@media (max-width: \\$breakpoint-medium) {\n\t\n}",
+                "brl":  "@media (max-width: \\$breakpoint-large) {\n\t\n}",
+            }
+        }
+    },
+}
